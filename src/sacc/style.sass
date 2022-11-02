@@ -5,7 +5,7 @@
     font-family: Lato
 
 .title
-        font-size: 36px
+        font-size: 30px
         font-weight: 700
         color: black
         text-align: center
@@ -13,7 +13,7 @@
         text-transform: uppercase
 .subtitle
         max-width: 1100px
-        font-size: 28px
+        font-size: 24px
         font-weight: 400
         color: #aca1a1
         text-align: center
@@ -63,21 +63,58 @@
         text-align: center
         margin-bottom: 34px
         margin: 0 auto
-.frame
-    &__conternt
+.frame, .chain
+    &__content
         display: flex
     &__bg
         width: 1066px
         height: 600px
         background: url('/src/img/bg_2.png') center no-repeat
     &__logo
+        display: block
         width: 135px
         height: 135px
     &__block
         flex-direction: column
-        border-top: 60px
-        width: 533px
+        margin-top: 60px
+        width: 532px
+    &__title
+        margin-top: 30px
     &__icon
         display: flex
         justify-content: center
         margin-bottom: 30px
+    &__subtitle
+        margin-bottom: 107px
+        max-width: 400px
+        letter-spacing: 1.75px
+
+.chain__bg
+    background: url('/src/img/bg_4.png') center no-repeat
+
+.fork
+    width: 1600px
+    height: 600px
+    &__content
+        display: flex
+    &__bg
+        display: flex
+        width: 533px
+        height: 600px
+        background: url('/src/img/bg_6.png') center no-repeat
+    .second
+        background: url('/src/img/bg_8.png') center no-repeat
+    &__block
+        flex-direction: column
+        margin-top: 60px
+        width: 533px
+    &__title
+        margin-top: 30px
+    &__icon
+        display: flex
+        justify-content: center
+        margin-bottom: 30px
+    &__subtitle
+        margin-bottom: 107px
+        max-width: 400px
+        letter-spacing: 1.75px
