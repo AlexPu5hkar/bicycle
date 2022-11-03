@@ -20,7 +20,10 @@
     text-align: center
     margin-bottom: 34px
     margin: 0 auto
-
+.icon
+    &:hover
+            transform: rotate(360deg)
+            transition: 0.5s ease
 .main
     height: 800px
     background: url('/src/img/bg_1.png')
@@ -38,6 +41,9 @@
     font-size: 30px
     font-weight: 400
     color: black
+    &:hover
+        transform: scale3d(1.2, 1.2, 1.2)
+        text-shadow: 1px 1px 3px #a5e4e1
 
 .impress
     height: 460px
@@ -70,9 +76,10 @@
         height: 600px
         background: url('/src/img/bg_2.png') center no-repeat
     &__logo
-        display: block
         width: 135px
         height: 135px
+        margin: 0 auto
+        padding-top: 232px
     &__block
         flex-direction: column
         margin-top: 60px
@@ -117,6 +124,13 @@
         margin-bottom: 109px
         max-width: 400px
         letter-spacing: 1.75px
+    &__logo
+        display: block
+        margin: 0 auto
+        padding-top: 187px
+        &:hover
+            transform: rotate3d(0, 1, 0, 360deg)
+            transition: 2s ease-in
 .twitter
     height: 460px
     padding-top: 110px
@@ -188,6 +202,9 @@
         width: 135px
         height: 135px
         margin: 0 auto
+        &:hover
+            transform: rotate3d(0, 1, 0, 720deg)
+            transition: 2s ease-in
     &__subtitle
         font-size: 18px
         font-weight: 900
@@ -239,6 +256,9 @@
     &__address
 .links__item
     margin: 0 5px 0 5px
+    &:hover
+        transform: scale3d(1.5, 1.5, 1.5)
+        transition: 0.3s ease-in
 .address__item-bold
     font-size: 14px
     font-weight: 900
