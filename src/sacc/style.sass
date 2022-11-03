@@ -6,20 +6,20 @@
 .bicycle
     width: 1600px
 .title
-        font-size: 30px
-        font-weight: 700
-        color: black
-        text-align: center
-        margin-bottom: 34px
-        text-transform: uppercase
+    font-size: 30px
+    font-weight: 700
+    color: black
+    text-align: center
+    margin-bottom: 34px
+    text-transform: uppercase
 .subtitle
-        max-width: 1100px
-        font-size: 24px
-        font-weight: 400
-        color: #aca1a1
-        text-align: center
-        margin-bottom: 34px
-        margin: 0 auto
+    max-width: 1100px
+    font-size: 24px
+    font-weight: 400
+    color: #aca1a1
+    text-align: center
+    margin-bottom: 34px
+    margin: 0 auto
 
 .main
     height: 800px
@@ -172,6 +172,11 @@
         font-weight: 900
         line-height: 47px
         justify-content: center
+        &:hover
+            border: 1px solid #f0eaea
+            background: #292929
+            color: #f0eaea
+            box-shadow: 1px 1px 5px #5c5e5f
 .mail
     height: 470px
     padding: 105px 0 115px 0
@@ -214,16 +219,24 @@
         color: #f0eaea
         box-shadow: 1px 1px 5px #225154
 .footer
+    height: 230px
+    align-items: center
     &__content
-        height: 230px
+        width: 1100px
         display: flex
         justify-content: space-around
         align-items: center
+        justify-content: center
+        margin: 0 auto
+        padding-top: 100px
     &__links
         display: flex
         justify-content: space-between
+        margin: 0 auto
     &__logo
         display: flex
+        align-items: center
+    &__address
 .links__item
     margin: 0 5px 0 5px
 .address__item-bold
@@ -232,10 +245,11 @@
     color: #aca1a1
     line-height: 20px
     
-.address__item
+.address__item , .logo__text
     font-size: 14px
     font-weight: 400
     color: #aca1a1
     font-style: italic
     line-height: 20px
+    padding-right: 5px
     
